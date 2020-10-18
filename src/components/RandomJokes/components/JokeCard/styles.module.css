@@ -1,0 +1,35 @@
+.jokeContainer {
+    padding: 16px;
+}
+
+.joke {
+    color: var(--text);
+    transition: color 0.5s ease-in-out;
+}
+
+.buttonsWrapper {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: var(--text);
+    opacity: 0.9;
+    transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.likedJoke {
+    opacity: 1 !important;
+    color: var(--secondary-theme-color) !important;
+}
+
+.button:last-child {
+    margin-right: 0;
+}

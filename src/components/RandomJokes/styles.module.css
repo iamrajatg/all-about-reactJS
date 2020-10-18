@@ -1,0 +1,48 @@
+.hideLoader {
+    opacity: 0 !important;
+}
+
+.loader {
+    z-index: 100;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.25s ease-in-out;
+}
+
+.tabsRoot {
+    margin: 5rem auto 0;
+    width: 90%;
+}
+
+.tabIndicator {
+    transition: color 0.5s ease-in-out;
+}
+
+.tabRoot {
+    color: var(--text) !important;
+    transition: color 0.5s ease-in-out;
+}
+
+.btnWrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 2rem;
+    composes: animateFadeGrow from global;
+}
+
+.scrollToTopBtn {
+    margin-left: 1rem !important;
+}
+
+@media (min-width: 900px) {
+    .tabsRoot {
+        width: 80%;
+    }
+    .btnWrapper {
+        width: 80%;
+    }
+}
